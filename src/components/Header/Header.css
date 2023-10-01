@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid greenyellow;
     height: var(--header-height);
 }
 
