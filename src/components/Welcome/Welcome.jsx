@@ -18,7 +18,7 @@ export default function Welcome() {
                 <button
                     id="welcome-shop-btn"
                     className={`font-medium text-3xl py-[3px] px-[20px] rounded-3xl border-white border-[2px] mt-5 
-                        hover:scale-105 transition ease-in-out hover:-translate-y-[8px] hover:scale-110 duration-300`}
+                        hover:scale-105 transition ease-in-out hover:-translate-y-[8px] hover:scale-110 backdrop-blur-sm duration-300`}
                 >
                     Shop
                 </button>
