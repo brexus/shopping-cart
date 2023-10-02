@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./MensClothing.css";
+// import "./MensClothing.css";
 import Card from "../../../components/Card/Card";
 
 export default function MensClothing() {

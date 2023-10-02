@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import "./Card.css";
+// import "./Card.css";
 
 export default function Card({
     id,
@@ -13,10 +13,12 @@ export default function Card({
 }) {
 
     return (
-        <div className="card">
-            <img className="card-img" src={image} alt="" />
+        <div className={"w-full bg-neutral-800 p-6 rounded-2xl"}>
+            <img className="card-img rounded-2xl" src={image} alt="" />
             <h1 className="card-title">{title}</h1>
-            <h2 className="card-price">{price} $</h2>
+            <h2 className="card-price font-bold text-lg">{price} $</h2>
         </div>
+
+       
     );
 }

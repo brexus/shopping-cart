@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./AllClothing.css";
+// import "./AllClothing.css";
 import Card from "../../../components/Card/Card";
 
 export default function AllClothing() {
@@ -43,15 +43,23 @@ export default function AllClothing() {
 
     return (
 
-        <div className="shop-container" id="all-clothing">
-            <h1 className="shop-title">All clothing</h1>
+        <div 
+            // className="shop-container"
+            className="flex flex-col"
+
+            id="all-clothing"
+        >
+            <h1 className="shop-title text-center text-4xl my-[30px]">All clothing</h1>
             <div className="separator"></div>
 
             {data &&
-                <div className="shop-items">
+                <div 
+                    // className="shop-items"
+                    className={"m-auto p-7 grid gap-[30px] grid-cols-4 max-w-5xl max-md:w-full max-md:grid-cols-2"}
+                >
                 {data.map((item) => {
                     return (
-                        <Card 
+                        <Card
                             key={item.id}
                             id={item.id}
                             category={item.category}
