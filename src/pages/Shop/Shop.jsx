@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 export default function Shop() {
 
     return (
-        <div id="shop">
+        <div id="shop" className="min-h-screen flex flex-col">
             <Header />
     
             <Outlet />

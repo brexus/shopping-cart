@@ -1,10 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import Shop from "../pages/Shop/Shop";
-import WomensClothing from "../pages/Shop/WomensClothing/WomensClothing";
-import MensClothing from "../pages/Shop/MensClothing/MensClothing";
-import AllClothing from "../pages/Shop/AllClothing/AllClothing";
-import Welcome from "../components/Welcome/Welcome";
+import Clothing from "../components/Clothing/Clothing";
 
 const Router = () => {
     const router = createBrowserRouter([
@@ -17,14 +14,14 @@ const Router = () => {
             path: "/shop",
             element: <Shop />,
             children: [
-                { index: true, element: <AllClothing /> },
+                { index: true, element: <Clothing url={"https://fakestoreapi.com/products"}/> },
                 {
                     path: "/shop/mens-clothing",
-                    element: <MensClothing />,
+                    element: <Clothing url={"https://fakestoreapi.com/products/category/men's%20clothing"}/>,
                 },
                 {
                     path: "/shop/womens-clothing",
-                    element: <WomensClothing />,
+                    element: <Clothing url={"https://fakestoreapi.com/products/category/women's%20clothing"}/>,
                 },
             ]
         }
